@@ -29,10 +29,13 @@
   .facets {
     display: block;
     width: 244px;
+    flex-grow: 1;
+    flex-shrink: 0;
   }
 
   .gutter {
     width: 50px;
+    flex-grow: 0;
   }
 
   .gutter-left {
@@ -44,6 +47,14 @@
   .workspace {
     display: block;
     min-width: 400px;
+  }
+
+  .facets {
+    flex-grow: 0;
+  }
+
+  .gutter {
+    flex-grow: 1;
   }
 
   .gutter-right {
