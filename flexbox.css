@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+}
+
+.column {
+  margin: 0px auto;
+  flex-grow: 0;
+}
+
+.gutter {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.main {
+  width: 682px;
+  flex-shrink: 1;
+}
+
+.workspace, .facets, .gutter-right {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    margin: 0 24px;
+  }
+
+  .facets {
+    display: block;
+    width: 244px;
+  }
+
+  .gutter {
+    width: 50px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .workspace {
+    display: block;
+    min-width: 400px;
+  }
+
+  .gutter-right {
+    display: block;
+  }
+}
