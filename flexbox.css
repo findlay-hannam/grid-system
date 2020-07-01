@@ -17,7 +17,7 @@
   flex-shrink: 1;
 }
 
-.workspace, .facets, .gutter-right {
+.workspace, .facets, .gutter {
   display: none;
 }
 
@@ -33,6 +33,10 @@
 
   .gutter {
     width: 50px;
+  }
+
+  .gutter-left {
+    display: block;
   }
 }
 
