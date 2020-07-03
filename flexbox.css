@@ -4,15 +4,16 @@ body {
 
 .container {
   display: flex;
-  margin: 0 16px;
 }
 
 .column {
   margin: 0px auto;
   flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .gutter {
+  width: 40px;
   flex-grow: 1;
   flex-shrink: 0;
 }
@@ -36,13 +37,6 @@ body {
   .facets {
     display: block;
     width: 244px;
-    flex-grow: 1;
-    flex-shrink: 0;
-  }
-
-  .gutter {
-    width: 50px;
-    flex-grow: 0;
   }
 
   .gutter-left {
@@ -56,14 +50,6 @@ body {
     min-width: 400px;
   }
 
-  .facets {
-    flex-grow: 0;
-  }
-
-  .gutter {
-    flex-grow: 1;
-  }
-
   .gutter-right {
     display: block;
   }
@@ -72,10 +58,6 @@ body {
 @media only screen and (min-width: 1440px) {
   .facets {
     width: 348px;
-  }
-
-  .gutter {
-    width: 40px;
   }
 }
 
